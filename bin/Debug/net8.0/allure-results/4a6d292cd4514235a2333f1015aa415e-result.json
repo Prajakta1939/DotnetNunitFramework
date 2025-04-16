@@ -1,0 +1,81 @@
+{
+  "uuid": "dfc51c04-4ce3-45e2-b899-dd42fe465a46",
+  "historyId": "009f58c8cd92acf7a46f6b4c9523aa1d",
+  "testCaseId": "8eca6bbfa63b52c4850a6c9be16bb123",
+  "fullName": "TestAutomation:TestAutomation.Tests.PracticeTestAutomation.LoginTest_DataDriven(System.String,System.String,System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "INL-5Z67PG3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "TestAutomation.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "LoginTest_DataDriven"
+    },
+    {
+      "name": "testClass",
+      "value": "PracticeTestAutomation"
+    },
+    {
+      "name": "tag",
+      "value": "DataDriven"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "owner",
+      "value": "YourName"
+    },
+    {
+      "name": "subSuite",
+      "value": "LoginTests"
+    },
+    {
+      "name": "suite",
+      "value": "PracticeTestAutomationSuite"
+    }
+  ],
+  "links": [],
+  "name": "LoginTest_DataDriven(\"student\",\"Password123\",\"Logged In Successfully\")",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "username",
+      "value": "\"student\"",
+      "excluded": false
+    },
+    {
+      "name": "password",
+      "value": "\"Password123\"",
+      "excluded": false
+    },
+    {
+      "name": "expectedTitle",
+      "value": "\"Logged In Successfully\"",
+      "excluded": false
+    }
+  ],
+  "start": 1744615839975,
+  "stop": 1744615843389
+}

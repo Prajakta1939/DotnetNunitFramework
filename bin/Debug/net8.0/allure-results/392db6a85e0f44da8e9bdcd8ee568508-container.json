@@ -1,0 +1,12 @@
+{
+  "uuid": "2d9cecbd-2b20-4417-afa6-eb0e4d698e74",
+  "name": "TestAutomation.Tests.PracticeTestAutomation.LoginTest_DataDriven(\"student\",\"Password123\",\"Logged In Successfully\")",
+  "children": [
+    "b57522a2-9638-458a-88f1-808aeb4a0998"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1744618003065,
+  "stop": 1744618006801
+}

@@ -1,0 +1,53 @@
+{
+  "uuid": "15273290-5d9e-4c6f-81c4-0fa3669d64de",
+  "historyId": "5dc09ae7a1f9a4425ab48e9c0efe5410",
+  "testCaseId": "adca33e193f15cc7643c37c6cdfd6d2d",
+  "fullName": "TestAutomation:TestAutomation.Tests.PracticeTestAutomation.EditFoodItemsInlineTest()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "INL-5Z67PG3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "TestAutomation.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "EditFoodItemsInlineTest"
+    },
+    {
+      "name": "testClass",
+      "value": "PracticeTestAutomation"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "suite",
+      "value": "Practice Test Automation"
+    }
+  ],
+  "links": [],
+  "name": "Edit Food Items Inline Test",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1744792480889,
+  "stop": 1744792484643
+}

@@ -1,0 +1,12 @@
+{
+  "uuid": "ed188b4e-2fbb-4434-8a53-bd550c074c12",
+  "name": "TestAutomation.Tests.PracticeTestAutomation.NavigateToPracticePageTest",
+  "children": [
+    "f26332e6-ca90-460a-aa94-e7b5c2616b14"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1744792850022,
+  "stop": 1744792852825
+}

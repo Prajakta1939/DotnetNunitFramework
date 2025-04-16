@@ -1,0 +1,12 @@
+{
+  "uuid": "c01d7d0a-aeaa-40b9-aefd-f6fd7195ec17",
+  "name": "TestAutomation.Tests.RegisterFormTests.Test_FillAndSubmitRegistrationForm_WithHardcodedData",
+  "children": [
+    "dbbca863-72bc-4db6-a95d-4c941dc1ab27"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1744793110046,
+  "stop": 1744793115794
+}

@@ -1,0 +1,12 @@
+{
+  "uuid": "857de2a7-1e78-45fa-8332-2407fd64b2e7",
+  "name": "TestAutomation.Tests.PracticeTestAutomation.LoginTest_DataDriven(\"invalidUser\",\"invalidPass\",\"Your username is invalid!\")",
+  "children": [
+    "dc9054a0-af84-4528-aa1b-e2ae7734a104"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1744610313084,
+  "stop": 1744610326478
+}

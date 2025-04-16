@@ -1,0 +1,53 @@
+{
+  "uuid": "e4bdae11-db2e-4c96-b464-342ec894d394",
+  "historyId": "2db7d781540849c067f64c10fa540977",
+  "testCaseId": "fca44282602ec0c88def5fa94ac801ce",
+  "fullName": "TestAutomation:TestAutomation.Tests.PracticeTestAutomation.LoginTest_WithCsvData()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "INL-5Z67PG3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "TestAutomation.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "LoginTest_WithCsvData"
+    },
+    {
+      "name": "testClass",
+      "value": "PracticeTestAutomation"
+    },
+    {
+      "name": "subSuite",
+      "value": "CsvTests"
+    },
+    {
+      "name": "suite",
+      "value": "PracticeTestAutomationSuite"
+    }
+  ],
+  "links": [],
+  "name": "LoginTest_WithCsvData",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1744615801563,
+  "stop": 1744615820332
+}

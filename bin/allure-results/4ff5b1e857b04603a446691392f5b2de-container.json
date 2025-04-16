@@ -1,0 +1,12 @@
+{
+  "uuid": "885e997b-c62a-403c-8998-3976a3c9c505",
+  "name": "TestAutomation.Tests.PracticeTestAutomation.EditFoodItemsInlineTest",
+  "children": [
+    "4795c0a9-007e-4398-a034-56b210ad941f"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1744794394011,
+  "stop": 1744794397554
+}

@@ -1,0 +1,88 @@
+{
+  "uuid": "b84de2c7-0287-4cb4-ac18-60e77980d510",
+  "historyId": "10b993d206efa9570235a542fbd04879",
+  "testCaseId": "8eca6bbfa63b52c4850a6c9be16bb123",
+  "fullName": "TestAutomation:TestAutomation.Tests.PracticeTestAutomation.LoginTest_DataDriven(System.String,System.String,System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "INL-5Z67PG3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "TestAutomation.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "LoginTest_DataDriven"
+    },
+    {
+      "name": "testClass",
+      "value": "PracticeTestAutomation"
+    },
+    {
+      "name": "tag",
+      "value": "DataDriven"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "owner",
+      "value": "YourName"
+    },
+    {
+      "name": "subSuite",
+      "value": "LoginTests"
+    },
+    {
+      "name": "suite",
+      "value": "PracticeTestAutomationSuite"
+    }
+  ],
+  "links": [],
+  "name": "LoginTest_DataDriven(\"invalidUser\",\"invalidPass\",\"Your username is invalid!\")",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".post-title\"}\n  (Session info: chrome=134.0.6998.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at TestAutomation.Utilities.BasePage.GetText(By locator) in /home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/Utilities/BasePage.cs:line 28\n   at TestAutomation.Pages.TestLoginPage.GetPostTitle() in /home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/Pages/TestLoginPage.cs:line 40\n   at TestAutomation.Tests.PracticeTestAutomation.LoginTest_DataDriven(String username, String password, String expectedTitle) in /home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/Tests/PracticeTestAutomation.cs:line 50\n   at InvokeStub_PracticeTestAutomation.LoginTest_DataDriven(Object, Span`1)\n   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "username",
+      "value": "\"invalidUser\"",
+      "excluded": false
+    },
+    {
+      "name": "password",
+      "value": "\"invalidPass\"",
+      "excluded": false
+    },
+    {
+      "name": "expectedTitle",
+      "value": "\"Your username is invalid!\"",
+      "excluded": false
+    }
+  ],
+  "start": 1744618006802,
+  "stop": 1744618020359
+}

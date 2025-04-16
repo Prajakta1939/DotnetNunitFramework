@@ -1,0 +1,53 @@
+{
+  "uuid": "27f38e88-7920-47ae-a745-798c10951963",
+  "historyId": "6b53d3a26b9872ec5b5eb0c1ddab155a",
+  "testCaseId": "4d4b19c5329b09b66f1e6a99dcf2685c",
+  "fullName": "TestAutomation:TestAutomation.Tests.PracticeTestAutomation.TestExceptionsPageTest()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "INL-5Z67PG3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "TestAutomation.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TestExceptionsPageTest"
+    },
+    {
+      "name": "testClass",
+      "value": "PracticeTestAutomation"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "suite",
+      "value": "Practice Test Automation"
+    }
+  ],
+  "links": [],
+  "name": "Test Exceptions Page Actions",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1744793121191,
+  "stop": 1744793133965
+}
