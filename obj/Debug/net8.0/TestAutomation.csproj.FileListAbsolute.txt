@@ -233,3 +233,4 @@
 /home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
 /home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/bin/Debug/net8.0/Reqnroll.dll
 /home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/bin/Debug/net8.0/SpecFlow.Internal.Json.dll
+/home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/obj/Debug/net8.0/TestAutomation.sourcelink.json
