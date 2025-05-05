@@ -10,25 +10,31 @@ pipeline {
 
         stage('Restore') {
             steps {
-                sh 'dotnet restore DotnetProject/NUnitSeleniumFramework/TestAutomation/TestAutomation.csproj'
+                dir('DotnetProject/NUnitSeleniumFramework/TestAutomation') {
+                    sh 'dotnet restore TestAutomation.csproj'
+                }
             }
         }
 
         stage('Build') {
             steps {
-                sh 'dotnet build DotnetProject/NUnitSeleniumFramework/TestAutomation/TestAutomation.csproj --configuration Release'
+                dir('DotnetProject/NUnitSeleniumFramework/TestAutomation') {
+                    sh 'dotnet build TestAutomation.csproj --configuration Release --no-restore'
+                }
             }
         }
 
         stage('Test') {
             steps {
-                sh 'dotnet test DotnetProject/NUnitSeleniumFramework/TestAutomation/TestAutomation.csproj --logger "trx;LogFileName=test_results.trx"'
+                dir('DotnetProject/NUnitSeleniumFramework/TestAutomation') {
+                    sh 'dotnet test TestAutomation.csproj --logger "trx;LogFileName=test_results.trx" --no-build --no-restore'
+                }
             }
         }
 
         stage('Publish Test Results') {
             steps {
-                echo 'Note: TRX format not supported by junit step. Convert to XML if needed.'
+                echo 'Note: TRX format is not directly supported by the JUnit plugin. Consider converting TRX to XML for integration.'
             }
         }
     }
