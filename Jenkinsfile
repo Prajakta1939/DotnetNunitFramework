@@ -1,11 +1,12 @@
 pipeline {
     agent any
 
-    environment {
-        REPO_URL = 'https://github.com/Prajakta1939/DotnetNunitFramework.git'
-        PROJECT_PATH = 'DotnetProject/NUnitSeleniumFramework/TestAutomation'
-        TEST_PROJECT_PATH = "${PROJECT_PATH}/DotnetProject/NUnitSeleniumFramework/TestAutomation.csproj"
-    }
+   environment {
+    REPO_URL = 'https://github.com/Prajakta1939/DotnetNunitFramework.git'
+    PROJECT_PATH = 'DotnetProject/NUnitSeleniumFramework/TestAutomation'
+    TEST_PROJECT_PATH = "${PROJECT_PATH}/TestAutomation.csproj"
+}
+
 
     stages {
         stage('Checkout') {
