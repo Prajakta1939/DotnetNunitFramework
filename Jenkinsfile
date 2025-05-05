@@ -10,7 +10,7 @@ pipeline {
 
         stage('Restore') {
             steps {
-                dir('NUnitSeleniumFramework/TestAutomation') {
+                dir('DotnetProject/NUnitSeleniumFramework/TestAutomation') {
                     sh 'dotnet restore'
                 }
             }
@@ -18,7 +18,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                dir('NUnitSeleniumFramework/TestAutomation') {
+                dir('DotnetProject/NUnitSeleniumFramework/TestAutomation') {
                     sh 'dotnet build --configuration Release'
                 }
             }
@@ -26,7 +26,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                dir('NUnitSeleniumFramework/TestAutomation') {
+                dir('DotnetProject/NUnitSeleniumFramework/TestAutomation') {
                     sh 'dotnet test --logger "trx;LogFileName=test_results.trx"'
                 }
             }
