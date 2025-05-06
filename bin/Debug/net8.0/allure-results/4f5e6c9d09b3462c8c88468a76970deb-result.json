@@ -1,0 +1,58 @@
+{
+  "uuid": "1514aded-b3df-4943-8e8b-2ed027f75602",
+  "historyId": "2a6026d6c6ad26d8c6e3e96570b4ede9",
+  "testCaseId": "299de361c4e48f887c28fcd78331a687",
+  "fullName": "TestAutomation:TestAutomation.Tests.RegisterFormTests.Test_FillAndSubmitRegistrationForm_UsingExcelData()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "INL-5Z67PG3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "TestAutomation.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Test_FillAndSubmitRegistrationForm_UsingExcelData"
+    },
+    {
+      "name": "testClass",
+      "value": "RegisterFormTests"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "tag",
+      "value": "ExcelData"
+    },
+    {
+      "name": "suite",
+      "value": "Registration Form Tests"
+    }
+  ],
+  "links": [],
+  "name": "Fill and Submit Registration Form Using Excel Data",
+  "status": "passed",
+  "stage": "finished",
+  "description": "Test to verify registration form using Excel test data",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1746024831037,
+  "stop": 1746024834809
+}

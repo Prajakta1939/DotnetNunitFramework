@@ -11,7 +11,6 @@
 /home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/bin/Debug/net8.0/nunit.engine.api.dll
 /home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/bin/Debug/net8.0/nunit.engine.core.dll
 /home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/bin/Debug/net8.0/testcentric.engine.metadata.dll
-/home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/bin/Debug/net8.0/allureConfig.json
 /home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/bin/Debug/net8.0/TestData/TestData.csv
 /home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/bin/Debug/net8.0/NUnit3.TestAdapter.dll
 /home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/bin/Debug/net8.0/TestAutomation.deps.json

@@ -1,0 +1,53 @@
+{
+  "uuid": "f4f3ef63-b13e-4c72-9111-caf315cf01be",
+  "historyId": "ac8dcbc83b3c2ddf7177f89460db2341",
+  "testCaseId": "5a9110f2519a99b425b32bfd28629e00",
+  "fullName": "TestAutomation:TestAutomation.Tests.PracticeTestAutomation.NavigateToPracticePageTest()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "INL-5Z67PG3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "TestAutomation.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "NavigateToPracticePageTest"
+    },
+    {
+      "name": "testClass",
+      "value": "PracticeTestAutomation"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "suite",
+      "value": "Practice Test Automation"
+    }
+  ],
+  "links": [],
+  "name": "Navigate to Practice Page",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1746024834825,
+  "stop": 1746024838517
+}
