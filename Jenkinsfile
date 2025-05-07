@@ -16,20 +16,26 @@ pipeline {
 
         stage('Restore') {
             steps {
-                // Use the correct path to the .csproj file
-                sh 'dotnet restore TestAutomation/TestAutomation.csproj'
+                // Change directory to TestAutomation before running dotnet restore
+                dir('TestAutomation') {
+                    sh 'dotnet restore TestAutomation.csproj'
+                }
             }
         }
 
         stage('Build') {
             steps {
-                sh 'dotnet build TestAutomation/TestAutomation.csproj --configuration Release'
+                dir('TestAutomation') {
+                    sh 'dotnet build TestAutomation.csproj --configuration Release'
+                }
             }
         }
 
         stage('Test') {
             steps {
-                sh 'dotnet test TestAutomation/TestAutomation.csproj --logger "trx;LogFileName=test_results.trx"'
+                dir('TestAutomation') {
+                    sh 'dotnet test TestAutomation.csproj --logger "trx;LogFileName=test_results.trx"'
+                }
             }
         }
     }
