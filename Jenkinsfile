@@ -16,8 +16,12 @@ pipeline {
 
         stage('Restore') {
             steps {
+                // Print the current directory to verify the location
+                sh 'pwd'
+                
                 // Change directory to TestAutomation before running dotnet restore
                 dir('TestAutomation') {
+                    sh 'ls -l'  // List the contents of the directory to confirm the presence of TestAutomation.csproj
                     sh 'dotnet restore TestAutomation.csproj'
                 }
             }
