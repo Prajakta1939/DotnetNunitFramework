@@ -2,57 +2,40 @@ pipeline {
     agent any
 
     environment {
-        DOTNET_ROOT = "/usr/share/dotnet"
-        PATH = "/usr/share/dotnet:${env.PATH}"
-    }
-
-    tools {
-        // Ensure Jenkins has the .NET SDK configured if needed
-        // dotnet 'your-dotnet-tool-name' // optional
+        DOTNET_ROOT = '/usr/share/dotnet'  // Optional, depends on your setup
+        PATH = "/usr/share/dotnet:${env.PATH}"  // Ensure dotnet is in PATH
+        HOME = '/var/lib/jenkins'  // Ensure the HOME environment variable is set
     }
 
     stages {
-        stage('Clone Repository') {
+        stage('Checkout') {
             steps {
-                git 'https://github.com/Prajakta1939/DotnetNunitFramework.git'
+                checkout scm
             }
         }
 
-        stage('Restore Dependencies') {
+        stage('Restore') {
             steps {
-                dir('TestAutomation') {
-                    sh 'dotnet restore'
-                }
+                sh 'dotnet restore DotnetProject/NUnitSeleniumFramework/TestAutomation/TestAutomation.csproj'
             }
         }
 
         stage('Build') {
             steps {
-                dir('TestAutomation') {
-                    sh 'dotnet build --configuration Release'
-                }
+                sh 'dotnet build DotnetProject/NUnitSeleniumFramework/TestAutomation/TestAutomation.csproj --configuration Release'
             }
         }
 
-        stage('Run Tests') {
+        stage('Test') {
             steps {
-                dir('TestAutomation') {
-                    sh 'dotnet test --no-build --configuration Release --logger "trx;LogFileName=test_results.trx"'
-                }
-            }
-        }
-
-        stage('Publish Test Results') {
-            steps {
-                junit allowEmptyResults: true, testResults: '**/TestResults/*.trx'
+                sh 'dotnet test DotnetProject/NUnitSeleniumFramework/TestAutomation/TestAutomation.csproj --logger "trx;LogFileName=test_results.trx"'
             }
         }
     }
 
     post {
         always {
-            echo 'Pipeline finished.'
+            junit allowEmptyResults: true, testResults: '**/test_results.trx'  // Ensure correct file path
         }
     }
 }
-
