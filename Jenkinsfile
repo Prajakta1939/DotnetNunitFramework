@@ -16,19 +16,20 @@ pipeline {
 
         stage('Restore') {
             steps {
-                sh 'dotnet restore DotnetProject/NUnitSeleniumFramework/TestAutomation/TestAutomation.csproj'
+                // Use the correct path to the .csproj file
+                sh 'dotnet restore TestAutomation/TestAutomation.csproj'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'dotnet build DotnetProject/NUnitSeleniumFramework/TestAutomation/TestAutomation.csproj --configuration Release'
+                sh 'dotnet build TestAutomation/TestAutomation.csproj --configuration Release'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'dotnet test DotnetProject/NUnitSeleniumFramework/TestAutomation/TestAutomation.csproj --logger "trx;LogFileName=test_results.trx"'
+                sh 'dotnet test TestAutomation/TestAutomation.csproj --logger "trx;LogFileName=test_results.trx"'
             }
         }
     }
