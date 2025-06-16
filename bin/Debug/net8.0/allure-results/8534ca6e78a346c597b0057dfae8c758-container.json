@@ -1,0 +1,16 @@
+{
+  "uuid": "f492a7b5-52a1-49fb-9748-7657915354b2",
+  "name": "TestAutomation.Tests.PracticeTestAutomation",
+  "children": [
+    "26de4da7-0a7d-4a46-ba5c-0fbc2997907d",
+    "d80cba41-09da-472c-9daa-ce2c4ff4feff",
+    "b1af7d94-7b18-4013-82e0-44896e4a65e3",
+    "e6375ad3-b486-4224-b05f-74271bb7346c",
+    "adb24981-4a0f-4139-99b3-35006d07c6e0"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1748405614714,
+  "stop": 1748405618853
+}

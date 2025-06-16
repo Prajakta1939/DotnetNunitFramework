@@ -1,0 +1,12 @@
+{
+  "uuid": "f5acb432-1de5-46ac-839f-09ebd884c23a",
+  "name": "TestAutomation.Tests.PracticeTestAutomation.LoginTest_WithCsvData",
+  "children": [
+    "4c339938-633f-45c4-8aa7-2c62cbee8480"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1748405002514,
+  "stop": 1748405003212
+}

@@ -1,0 +1,12 @@
+{
+  "uuid": "9d9c0598-72b1-4c1a-92ff-ace44c325dc9",
+  "name": "TestAutomation.Tests.PracticeTestAutomation.LoginTest_WithExcelData",
+  "children": [
+    "cff83e42-c63f-4a49-b5d4-d4413895dd4e"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1748405003212,
+  "stop": 1748405003881
+}

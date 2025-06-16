@@ -1,0 +1,13 @@
+{
+  "uuid": "3cc0636c-66df-4c2c-8d17-9cd443ee1622",
+  "name": "TestAutomation.Tests.RegisterFormTests",
+  "children": [
+    "7ed4a851-42cd-48e2-a9e4-507d5356f6f9",
+    "b44c4441-d04e-45dd-b57f-170ff03f45e5"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1748405117725,
+  "stop": 1748405119231
+}

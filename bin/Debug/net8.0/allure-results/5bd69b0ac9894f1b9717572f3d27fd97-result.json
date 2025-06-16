@@ -1,0 +1,60 @@
+{
+  "uuid": "108752b6-6454-415f-a667-a6ec037b3daa",
+  "historyId": "ac8dcbc83b3c2ddf7177f89460db2341",
+  "testCaseId": "5a9110f2519a99b425b32bfd28629e00",
+  "fullName": "TestAutomation:TestAutomation.Tests.PracticeTestAutomation.NavigateToPracticePageTest()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "INL-5Z67PG3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "TestAutomation.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "NavigateToPracticePageTest"
+    },
+    {
+      "name": "testClass",
+      "value": "PracticeTestAutomation"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "suite",
+      "value": "Practice Test Automation"
+    }
+  ],
+  "links": [],
+  "name": "Navigate to Practice Page",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.InvalidOperationException : session not created: This version of ChromeDriver only supports Chrome version 137\nCurrent browser version is 136.0.7103.113 with binary path /usr/bin/google-chrome (SessionNotCreated)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities capabilities)\n   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)\n   at OpenQA.Selenium.Chromium.ChromiumDriver..ctor(ChromiumDriverService service, ChromiumOptions options, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeOptions options)\n   at TestAutomation.Drivers.WebDriverSetup.InitializeDriver() in /home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/Drivers/WebDriverSetup.cs:line 16\n   at TestAutomation.Tests.PracticeTestAutomation.SetUp() in /home/knoldus/dotnetFramework/DotnetProject/NUnitSeleniumFramework/TestAutomation/Tests/PracticeTestAutomation.cs:line 33\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1748405486525,
+  "stop": 1748405487293
+}
