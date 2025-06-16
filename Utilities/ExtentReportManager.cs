@@ -13,8 +13,8 @@ namespace TestAutomation.Utilities
         {
             if (extent == null)
             {
-                string reportPath = Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName, "Reports", "ExtentReport.html");
-                
+                string reportPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Reports", "ExtentReport.html");
+
                 // Create Reports folder if not exists
                 var reportDir = Path.GetDirectoryName(reportPath);
                 if (!Directory.Exists(reportDir))

@@ -5,38 +5,26 @@ using TestAutomation.Pages;
 using TestAutomation.Utilities;
 using AventStack.ExtentReports;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using Allure.NUnit;
-using Allure.NUnit.Attributes;
-using Allure.Net.Commons;
-
 
 namespace TestAutomation.Tests
 {
     [TestFixture]
     [Parallelizable(ParallelScope.Fixtures)]
-    [AllureNUnit]
-    [AllureSuite("Practice Test Automation")]
-    public class PracticeTestAutomation
+    public class PracticeTestAutomation : BaseTest
     {
         private IWebDriver driver;
         private TestLoginPage loginPage;
         private ExtentReports extent = ExtentReportManager.GetInstance();
         private ExtentTest test;
 
-
         [SetUp]
         public void SetUp()
         {
-            WebDriverSetup setup = new WebDriverSetup();
-            driver = setup.InitializeDriver();
+            driver = WebDriverSetup.InitializeDriver("edge");
             loginPage = new TestLoginPage(driver);
         }
 
         [Test, Order(1)]
-        [AllureName("Navigate to Practice Page")]
-        [AllureSeverity(SeverityLevel.normal)]
         public void NavigateToPracticePageTest()
         {
             test = extent.CreateTest("Navigate to Practice Page");
@@ -60,8 +48,6 @@ namespace TestAutomation.Tests
         }
 
         [Test, Order(2)]
-        [AllureName("Test Exceptions Page Actions")]
-        [AllureSeverity(SeverityLevel.normal)]
         public void TestExceptionsPageTest()
         {
             test = extent.CreateTest("Test Exceptions Page Actions");
@@ -85,8 +71,6 @@ namespace TestAutomation.Tests
         }
 
         [Test, Order(3)]
-        [AllureName("Edit Food Items Inline Test")]
-        [AllureSeverity(SeverityLevel.normal)]
         public void EditFoodItemsInlineTest()
         {
             test = extent.CreateTest("Edit Food Items Inline Test");
@@ -123,8 +107,6 @@ namespace TestAutomation.Tests
         }
 
         [Test, Order(4)]
-        [AllureName("Login Test Using CSV Data")]
-        [AllureSeverity(SeverityLevel.normal)]
         public void LoginTest_WithCsvData()
         {
             test = extent.CreateTest("Login Test Using CSV Data");
@@ -157,8 +139,6 @@ namespace TestAutomation.Tests
         }
 
         [Test, Order(5)]
-        [AllureName("Login Test Using Excel Data")]
-        [AllureSeverity(SeverityLevel.normal)]
         public void LoginTest_WithExcelData()
         {
             test = extent.CreateTest("Login Test Using Excel Data");
@@ -198,12 +178,13 @@ namespace TestAutomation.Tests
             test.Info("Excel-based login test completed.");
         }
 
-        [TearDown]
-        public void TearDown()
-        {
-            driver?.Quit();
-            driver?.Dispose();
-            extent.Flush();
-        }
+     [TearDown]
+public void TearDown()
+{
+    driver?.Quit();
+    driver?.Dispose();
+}
+
+
     }
 }

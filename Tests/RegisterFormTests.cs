@@ -2,42 +2,29 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using AventStack.ExtentReports;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using TestAutomation.Drivers;
 using TestAutomation.Pages;
 using TestAutomation.Utilities;
-using Allure.NUnit;
-using Allure.NUnit.Attributes;
-using Allure.Net.Commons;
-
 
 namespace TestAutomation.Tests
 {
     [TestFixture]
-    [AllureNUnit]
-    [AllureSuite("Registration Form Tests")]
-    public class RegisterFormTests
+    public class RegisterFormTests : BaseTest
     {
         private IWebDriver driver;
         private RegisterPage registerPage;
         private ExtentReports extent = ExtentReportManager.GetInstance();
         private ExtentTest extentTest;
 
-
         [SetUp]
         public void SetUp()
         {
-            WebDriverSetup setup = new WebDriverSetup();
-            driver = setup.InitializeDriver();
+            driver = WebDriverSetup.InitializeDriver("edge");
             registerPage = new RegisterPage(driver);
         }
 
         [Test, Order(1)]
-        [AllureName("Fill and Submit Registration Form with Hardcoded Data")]
-        [AllureSeverity(SeverityLevel.normal)]
-        [AllureDescription("Test to verify registration form with hardcoded values")]
-        [AllureTag("Hardcoded")]
         public void Test_FillAndSubmitRegistrationForm_WithHardcodedData()
         {
             extentTest = extent.CreateTest("Test_FillAndSubmitRegistrationForm_WithHardcodedData");
@@ -75,10 +62,6 @@ namespace TestAutomation.Tests
         }
 
         [Test, Order(2)]
-        [AllureName("Fill and Submit Registration Form Using Excel Data")]
-        [AllureSeverity(SeverityLevel.critical)]
-        [AllureDescription("Test to verify registration form using Excel test data")]
-        [AllureTag("ExcelData")]
         public void Test_FillAndSubmitRegistrationForm_UsingExcelData()
         {
             extentTest = extent.CreateTest("Test_FillAndSubmitRegistrationForm_UsingExcelData");
@@ -103,7 +86,7 @@ namespace TestAutomation.Tests
                         email: data["Email"],
                         phone: data["Phone"],
                         gender: data["Gender"],
-                        hobbies: data["Hobbies"].Split(','),
+                        hobbies: data["Hobbies"].Split(','), // Assuming comma separated hobbies
                         skill: data["Skill"],
                         selectCountry: data["Country"],
                         birthYear: data["Birth Year"],
@@ -113,7 +96,7 @@ namespace TestAutomation.Tests
                         confirmPassword: data["Confirm Password"]
                     );
 
-                    extentTest.Pass($"Form filled and submitted for {data["First Name"]} {data["Last Name"]}");
+                    extentTest.Pass($"Submitted form for {data["First Name"]} {data["Last Name"]}");
                 }
             }
             catch (Exception e)
@@ -122,13 +105,13 @@ namespace TestAutomation.Tests
                 throw;
             }
         }
-
         [TearDown]
-        public void TearDown()
-        {
-            extent.Flush();
-            driver?.Quit();
-            driver?.Dispose();
-        }
+public void TearDown()
+{
+    driver?.Quit();
+    driver?.Dispose();
+}
+
+
     }
 }
